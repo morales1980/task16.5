@@ -13,8 +13,10 @@ function getQuote() {
     });
 }
 //{ cache: "no-store" } — stosujemy to, aby wyłączyć możliwość zaglądania do HTTP Cache przez przeglądarkę. Innym słowy — chcemy, aby przeglądarka za każdym razem pytała podany URL o dane.
+
 function createTweet(input) {
   var data = input[0];
+  var asd = input;
 
   var dataElement = document.createElement('div');
   dataElement.innerHTML = data.content;
