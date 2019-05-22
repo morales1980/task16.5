@@ -16,12 +16,11 @@ function getQuote() {
 
 function createTweet(input) {
   var data = input[0];
-  var asd = input;
 
   var dataElement = document.createElement('div');
   dataElement.innerHTML = data.content;
-  console.log(data.content);
-  console.log(data);
+  console.log(dataElement);
+  console.log(dataElement.innerText);
   var quoteText = dataElement.innerText.trim();
   var quoteAuthor = data.title;
 
