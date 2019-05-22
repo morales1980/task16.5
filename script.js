@@ -19,6 +19,7 @@ function createTweet(input) {
   var dataElement = document.createElement('div');
   dataElement.innerHTML = data.content;
   console.log(data.content);
+  console.log(data);
   var quoteText = dataElement.innerText.trim();
   var quoteAuthor = data.title;
 
