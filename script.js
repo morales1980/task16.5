@@ -7,9 +7,9 @@ function getQuote() {
     .then(function(resp) {
       return resp.json();
     })
-    .then(createTweet);
-    .catch(function(error){
-      console.log(error);
+    .then(createTweet)
+    .catch(function(error) {
+      console.log(error.message);
     });
 }
 //{ cache: "no-store" } — stosujemy to, aby wyłączyć możliwość zaglądania do HTTP Cache przez przeglądarkę. Innym słowy — chcemy, aby przeglądarka za każdym razem pytała podany URL o dane.
